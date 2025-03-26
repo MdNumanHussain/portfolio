@@ -1,0 +1,22 @@
+.footer {
+    background: white;
+    color: black;
+    padding: 20px 30px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -50px;
+    z-index: 10;
+    position: relative;
+  }
+  
+  .footer-text {
+    margin: 0;
+  }
+  
+  body.dark .footer {
+    background: rgb(49, 48, 48);
+    color: #f1f1f1;
+  }
+  

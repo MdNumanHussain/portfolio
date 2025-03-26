@@ -1,0 +1,229 @@
+.home {
+    text-align: center;
+    padding: 0;
+    color: var(--text);
+    min-height: calc(100vh - 60px);
+    margin-top: -50px;
+    background-color: var(--bg);
+  }
+  
+  .profile-pic {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 50px;
+    border: 5px solid #ff4081;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+  }
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  .name {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 10px 0;
+    background: linear-gradient(to right, #ff4081, #ff6e7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .info-line {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--info);
+    margin: 6px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 26px;
+    margin: 30px 0;
+  }
+  .social-icons a {
+    background-color: var(--icon-bg);
+    padding: 12px;
+    border-radius: 50%;
+    color: var(--icon);
+    transition: 0.3s;
+  }
+  .social-icons a:hover {
+    transform: scale(1.1);
+    background-color: var(--icon-hover);
+  }
+  
+  .download-btn {
+    background: linear-gradient(to right, #d13cad, #ec564d);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 28px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  .download-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .popup-inner {
+    background: var(--popup-bg);
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    color: var(--text);
+    width: 320px;
+    position: relative;
+  }
+  .popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .popup-header h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .popup-close {
+    font-size: 22px;
+    cursor: pointer;
+    background-color: var(--icon-bg);
+    padding: 6px 10px;
+    border-radius: 50%;
+  }
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+    margin: 25px 0;
+  }
+  .checkbox-group label {
+    font-size: 16px;
+  }
+  .popup-download {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .popup-download:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Theme colors */
+  body.light .home {
+    --bg: #f8f9fa;
+    --text: #111;
+    --info: #555;
+    --icon-bg: #f0f0f0;
+    --icon: #5a2c91;
+    --icon-hover: #e8e8e8;
+    --popup-bg: white;
+  }
+  body.dark .home {
+    --bg: #1e1e1e;
+    --text: #f5f5f5;
+    --info: #ccc;
+    --icon-bg: #333;
+    --icon: #c792ea;
+    --icon-hover: #555;
+    --popup-bg: #2a2a2a;
+  }
+  @media (max-width: 768px) {
+    .home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 60px);
+      padding: 20px 16px;
+      gap: 18px;
+    }
+  
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      margin-top: 0;
+    }
+  
+    .name {
+      font-size: 2.2rem;
+    }
+  
+    .info-line {
+      font-size: 1.1rem;
+      padding: 0 12px;
+      line-height: 1.5;
+    }
+  
+    .social-icons {
+      gap: 14px;
+      font-size: 26px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+  
+    .social-icons a {
+      padding: 12px;
+    }
+  
+    .download-btn {
+      font-size: 17px;
+      padding: 11px 24px;
+    }
+  
+    .popup-inner {
+      width: 90%;
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 12px;
+    }
+  
+    .popup-header h3 {
+      font-size: 1.1rem;
+    }
+  
+    .popup-download {
+      font-size: 15px;
+      padding: 10px 22px;
+    }
+  
+    .checkbox-group {
+      gap: 12px;
+      margin: 20px 0;
+      align-items: flex-start;
+    }
+  
+    .checkbox-group label {
+      font-size: 15px;
+    }
+  
+    .popup-close {
+      font-size: 20px;
+      padding: 6px 10px;
+    }
+  }
+  
