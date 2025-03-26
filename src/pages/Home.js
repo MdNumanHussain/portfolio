@@ -65,7 +65,7 @@ function Home() {
 
       <div className="social-icons">
         <a href="https://www.linkedin.com/in/numanmahim/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-        <a href="https://github.com/NumanMahim" target="_blank" rel="noreferrer"><FaGithub /></a>
+        <a href="https://github.com/MdNumanHussain" target="_blank" rel="noreferrer"><FaGithub /></a>
         <a href="https://wa.me/447387747419" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
         <a href="https://www.hackerrank.com/profile/numanhm618" target="_blank" rel="noreferrer"><FaHackerrank /></a>
         <a href="https://leetcode.com/u/mdnumanhussain/" target="_blank" rel="noreferrer"><FaShareAlt /></a>

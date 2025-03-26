@@ -1,9 +1,14 @@
 /* CONTACT SECTION LAYOUT */
 .contact {
+    min-height: 100vh; /* 👈 This makes it cover full screen height */
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 40px 20px;
-    margin-top: -50px;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
   }
   
   .contact-container {
